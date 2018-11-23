@@ -1,0 +1,13 @@
+baseurl: ""
+url: "https://raehik.net"
+
+# Default frontmatter
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: base
+
+# Build settings
+#markdown: kramdown

@@ -1,0 +1,142 @@
+---
+---
+
+@import "highlight";
+
+/*
+ * Inspired by tuzz's gist replicating GitHub Pages: https://gist.github.com/tuzz/3331384
+ */
+
+$all-pad-left: 30px;
+$nav-width: 120px;
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: white;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: #333;
+}
+
+// Navbar
+nav {
+	width: $nav-width;
+    height: 100%;
+    position: absolute;
+    ul {
+        padding-left: 20px
+    }
+}
+
+.page-content {
+    padding-left: $all-pad-left + $nav-width;
+}
+// end
+
+// Links
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+// end
+
+// Headers (font sizes)
+h1 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 28px;
+  color: black;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 14px;
+}
+// end
+
+// Tables
+table {
+  padding-left: 30px;
+}
+table tr {
+  background-color: white;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  padding: 6px 13px;
+}
+// end
+
+// Lists
+ul, ol {
+  padding-left: 30px;
+}
+// end
+
+// Code
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
